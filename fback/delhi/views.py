@@ -11,6 +11,15 @@ def delhi(request):
   template = loader.get_template('index.html')
   return HttpResponse(template.render())
 
+from django.shortcuts import render
+
+def tender_view(request):
+    # Add your view logic here
+    return render(request, 'tender.html')  # Assuming tender.html is in your templates directory
+
+def login_view(request):
+    # Add your view logic for login page here
+    return render(request, 'login.html')
 # def index(request):
 #     # Add any context data needed for index.html
 #     context = {

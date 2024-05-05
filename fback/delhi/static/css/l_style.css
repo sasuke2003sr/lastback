@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.main{
+        display: flex;
+        flex-direction: row;
+}
+
+
+img{
+    width: 50vw;
+    height: 100vh;
+    /* border-radius: 24px; */
+}
+
+h3,h5{
+    margin-top:  30px;
+    display: flex;
+    font-size: 48px;
+    justify-items: center;
+    color: rgb(14, 14, 13);
+    background-color: aqua;
+    margin-left: 28px;
+}
+.f{
+    
+    display: flex;
+    flex-direction: column;
+    /*  */
+    /* justify-items: center; */
+    align-items: center;
+    padding-top: 20vh;
+    width: 100vw;
+    height: 100vh;
+    /* border-radius: 24px; */
+    background-color: aqua;
+    
+}
+
+
+body{
+    overflow: hidden;
+}
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 24px;
+    margin: 10px;
+    background-color: aqua;
+    
+  
+#submit{
+    padding: 12px 24px;
+    width: 40%;
+
+    margin-top: 18px;
+    font-weight: bold;
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid black;
+    outline:  none;
+    border-radius: 24px;
+
+}
+
+   #for{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: black;
+    margin-top: 12px;
+    margin-left: 30%;
+    font-size: 12px !important;
+    text-align: right;
+  }
+
+
+  #submit:hover{
+    cursor: pointer;
+    background-color: rgb(161, 180, 180);
+  }
+.box{
+    padding: 10px;
+    width: 65%;
+    margin: 15px;
+    border-radius: 24px;
+    border: 1px solid black;
+}
+
+/* button{
+    
+    margin: 25px;
+    
+    height: 50px;
+    font-size: 32px;
+    padding: 8px 16px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border: none;
+    box-shadow: 35px 24px 47px -9px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    
+
+} */
+
+/* p{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+} */
