@@ -1,0 +1,134 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Parks and Gardens Department</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/i_style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'images/delhi.png' %}" alt="Logo">
+            </div>
+            <h1>Delhi Parks and Gardens Department</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Tenders</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="tender.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-overlay"></div>
+            <div class="banner-text">
+                <div class="curved-box">
+                    <h1>Welcome to Delhi Parks and Gardens Department</h1>
+                    <p>This is a simple recreation of the Delhi Parks and Gardens Department website using HTML and CSS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet semper ligula. Proin vitae lorem justo. Nunc quis ligula vestibulum, volutpat massa vitae, vehicula justo. Duis tempus eros id felis convallis tristique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <h2>An Act to provide for the preservation of trees</h2>
+            <h3>DELHI PRESERVATION OF TREES ACT, 1994</h3>
+            <p>The pressures of exponential population growth coupled with the consequential urban growth and infrastructure development the forests in NCT of Delhi had dwindled to a mere 22 sq km in 1993. This rampant deforestation eventually manifested in the devastating environmental degradation of the city. Hence, in order to protect and preserve the trees and thereby safeguard the environment, the Delhi Preservation of Trees Act (DPTA) was passed on 12th October 1994 by the legislative Assembly of the National Capital Territory of Delhi.</p>
+            <p>The Act includes provisions for:</p>
+            <ul>
+                <li>The preservation of all trees within its jurisdiction</li>
+                <li>Carrying out census of the existing trees and obtaining, whenever considered necessary</li>
+                <li>Development and maintenance of nurseries, supply of seeds, saplings and trees to persons</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="statistics">
+        <div class="container">
+            <h2>Statistics</h2>
+            <div class="statistics-grid">
+                <div class="statistic">
+                    <h3>Permission for Felling</h3>
+                    <p>10,874</p>
+                </div>
+                More statistic items 
+            </div>
+        </div>
+    </section>
+    
+    <section class="contribute">
+        <div class="container">
+            <h2>Contribute in Greening</h2>
+            <p>Best Way To Make A Difference In The Lives Of Others</p>
+        </div>
+    </section>
+    
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img id="first-image" src="{% static 'images/shutterstock_124871620.webp' %}" alt="Gallery Image 1">
+                <img src="{% static 'images/pexels-photo-904355.jpeg' %}" alt="Gallery Image 2">
+                <img src="{% static 'images/pexels-photo-10015425.webp' %}" alt="Gallery Image 3">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="notice">
+        <div class="container">
+            <h2>Notice</h2>
+            <div class="notice-content">
+                <p>Important notices and updates will be displayed here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Official Info</h3>
+                    <p>Location</p>
+                    <p>VIKAS BHAWAN, 2nd Floor, A Block, IP Estate, New Delhi, Delhi 110002</p>
+                    <p>Email</p>
+                    <p>treecelhq.dfawl@delhi.gov.in</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delhi Parks and Gardens Department</p>
+        </div>
+    </footer>
+</body>
+</html> 

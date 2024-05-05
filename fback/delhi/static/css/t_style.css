@@ -1,0 +1,70 @@
+/* Table styles */
+.tender-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tender-table th, .tender-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tender-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.tender-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tender-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.tender-list {
+    margin-bottom: 20px;
+}
+
+.tender {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tender h3 {
+    margin-bottom: 5px;
+}
+
+.tender p {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
