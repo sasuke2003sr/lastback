@@ -1,3 +1,5 @@
+<!-- tender_list.html -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tender Page</title>
     <!-- Include any necessary CSS files -->
-    <link rel="stylesheet" href="t_styles.css">
+    <link rel="stylesheet" href="{% static 'css/t_style.css' %}">
 </head>
 <body>
     <header>
         <h1>Tender Page</h1>
         <!-- Add navigation links if needed -->
+    </header>
+
+    <main>
+        <table class="tender-table">
+            <thead>
+                <tr>
+                    <th>Tender ID</th>
+                    <th>Title</th>
+                    <th>Published Date</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for tender in tenders %}
+                <tr>
+                    <td>{{ tender.tender_id }}</td>
+                    <td>{{ tender.title }}</td>
+                    <td>{{ tender.published_date }}</td>
+                    <td>{{ tender.deadline }}</td>
+                    <td>{{ tender.status }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Company</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Page</title>
+    <link rel="stylesheet" href="t_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tender Page</h1>
+        
     </header>
 
     <main>
@@ -32,7 +80,7 @@
                     <td>2024-06-10</td>
                     <td>Open</td>
                 </tr>
-                <!-- Add more rows for each tender -->
+                
             </tbody>
         </table>
     </main>
@@ -41,4 +89,4 @@
         <p>&copy; 2025 Your Company</p>
     </footer>
 </body>
-</html>
+</html> -->

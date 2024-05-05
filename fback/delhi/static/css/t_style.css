@@ -1,4 +1,60 @@
 /* Table styles */
+
+/* t_styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.tender-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tender-table th,
+.tender-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tender-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tender-table td {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
 .tender-table {
     width: 100%;
     border-collapse: collapse;

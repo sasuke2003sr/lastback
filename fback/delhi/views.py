@@ -16,7 +16,11 @@ from django.shortcuts import render
 def tender_view(request):
     # Add your view logic here
     return render(request, 'tender.html')  # Assuming tender.html is in your templates directory
+from .models import Tender
 
+def tender_list(request):
+    tenders = Tender.objects.all()
+    return render(request, 'tender_list.html', {'tenders': tenders})
 def login_view(request):
     # Add your view logic for login page here
     return render(request, 'login.html')
