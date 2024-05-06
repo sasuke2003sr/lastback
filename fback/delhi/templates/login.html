@@ -13,7 +13,8 @@
 <div class="f">
     <h3>Welcome Back !!!</h3>
     <h5>We missed you a lot  !!!</h5>
-    <form action="">
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
         <input type="username" name="username"  class="box" placeholder="Enter yours name">
     <!-- <label for="Username">Username:</label>
     <input type="Enter Username">
