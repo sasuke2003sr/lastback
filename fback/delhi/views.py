@@ -6,6 +6,7 @@
 
 from django.http import HttpResponse
 from django.template import loader
+from .models import Tender
 
 def delhi(request):
   template = loader.get_template('index.html')
@@ -16,7 +17,17 @@ from django.shortcuts import render
 def tender_view(request):
     # Add your view logic here
     return render(request, 'tender.html')  # Assuming tender.html is in your templates directory
-from .models import Tender
+
+
+def gallery_view(request):
+    # Add your view logic for the gallery page here
+    return render(request, 'gallery.html')
+
+
+def contact_view(request):
+    # Add your view logic for the gallery page here
+    return render(request, 'contact.html')
+
 
 def tender_list(request):
     tenders = Tender.objects.all()

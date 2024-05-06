@@ -1,3 +1,6 @@
+
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,12 +27,12 @@
         <div class="container">
             <h2>Our Gallery</h2>
             <div class="gallery-images">
-                <img src="pexels-photo-10015425.webp" alt="Image 1">
-                <img src="pexels-photo-904355.jpeg" alt="Image 2">
-                <img src="shutterstock_124871620.webp" alt="Image 3">
-                <img src="L2R4856-1366x768.jpg" alt="Image 4">
-                <img src="delhi.png" alt="Image 5">
-                <img src="shutterstock_124871620.webp" alt="Image 6">
+                <img src="{% static 'images/pexels-photo-10015425.webp' %}" alt="Image 1">
+                <img src="{% static 'images/pexels-photo-904355.jpeg' %}" alt="Image 2">
+                <img src="{% static 'images/shutterstock_124871620.webp' %}" alt="Image 3">
+                <img src="{% static 'images/L2R4856-1366x768.jpg' %}" alt="Image 4">
+                <img src="{% static 'images/delhi.png' %}" alt="Image 5">
+                <img src="{% static 'images/shutterstock_124871620.webp' %}" alt="Image 6">
                 <!-- Add more images here -->
             </div>
         </div>
