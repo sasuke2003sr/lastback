@@ -42,3 +42,4 @@ class Login(models.Model):
     Title=models.CharField(max_length=100)
     Date=models.DateField()
     Deadline=models.DateField()
+    Status=models.CharField(max_length=100,default="OK")

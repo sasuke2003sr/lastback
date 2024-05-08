@@ -13,7 +13,7 @@
 <div class="f">
     <h3>Welcome Back !!!</h3>
     <h5>We missed you a lot  !!!</h5>
-    <form action="index.html" method="post">
+    <form action="" method="post">
         {% csrf_token %}
         <input type="username" name="Name"  class="box" placeholder="Enter yours name">
     <!-- <label for="Username">Username:</label>
@@ -27,6 +27,7 @@
         <input type="date" name="Date" class="box" placeholder="Published ">
         <h6>Deadline Date</h6>
         <input type="date" name="Deadline" class="box" placeholder="Deadline">
+        <input type="text" name="Status" class="box" placeholder="Status in OK or Not">
         <input type="submit" value="Login In" id="submit">
     
     </form>

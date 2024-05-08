@@ -3,7 +3,7 @@
 # from django.shortcuts import render
 # from .models import Delhi
 
-
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader
 from .models import Tender
@@ -30,8 +30,8 @@ def contact_view(request):
 
 
 def tender_list(request):
-    tenders = Tender.objects.all()
-    return render(request, 'tender_list.html', {'tenders': tenders})
+    tenders = Login.objects.all()
+    return render(request,'tender.html',{'tenders': tenders})
 def login_view(request):
     # Add your view logic for login page here
     if request.method == "POST":
@@ -42,6 +42,7 @@ def login_view(request):
         Title=data.get("Title")
         Date=data.get("Date")
         Deadline=data.get("Deadline")
+        Status=data.get("Status")
 
         Login.objects.create(
             Name=Name,
@@ -50,8 +51,11 @@ def login_view(request):
             Title=Title,
             Date=Date,
             Deadline=Deadline,
+            Status=Status,
         )
-    return render(request, 'login.html')
+        return redirect('/')
+    return render(request,'login.html')
+    
 # def index(request):
 #     # Add any context data needed for index.html
 #     context = {
