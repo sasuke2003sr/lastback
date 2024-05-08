@@ -7,6 +7,7 @@
 from django.http import HttpResponse
 from django.template import loader
 from .models import Tender
+from .models import *
 
 def delhi(request):
   template = loader.get_template('index.html')
@@ -35,6 +36,23 @@ def tender_list(request):
 def login_view(request):
     # Add your view logic for login page here
     return render(request, 'login.html')
+    if request.method == "POST":
+        data=request.POST
+        Name=data.get("Name")
+        Password=data.get("Password")
+        TenderId=data.get("TenderId")
+        Title=data.get("Title")
+        Date=data.get("Date")
+        Deadline=data.get("Deadline")
+
+        Login.objects.create(
+            Name=Name,
+            Password=Password,
+            TenderId=TenderId,
+            Title=Title,
+            Date=Date,
+            Deadline=Deadline,
+        )
 # def index(request):
 #     # Add any context data needed for index.html
 #     context = {
@@ -55,3 +73,6 @@ def login_view(request):
 #         'mydelhi': mydelhi,
 #     }
 #     return render(request, 'contact.html', context)
+
+def master_view(request):
+    return render(request,"master.html")

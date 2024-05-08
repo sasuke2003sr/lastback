@@ -8,5 +8,6 @@ urlpatterns = [
     path('gallery.html', views.gallery_view, name='gallery'),
     path('tender.html', views.tender_view, name='tender'),
     path('login.html', views.login_view, name='login'),
+    path('master.html',views.master_view,name='master')
     # path('delhi/contact/<int:id>', views.contact, name='contact'),
 ]

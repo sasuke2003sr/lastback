@@ -34,3 +34,11 @@ class Tender(models.Model):
 
 #     def get_full_name(self):
 #         return f'{self.firstname} {self.lastname}'
+
+class Login(models.Model):
+    Name=models.CharField(max_length=100)
+    Password=models.CharField(max_length=100)
+    TenderId=models.CharField(max_length=100)
+    Title=models.CharField(max_length=100)
+    Date=models.DateField()
+    Deadline=models.DateField()
