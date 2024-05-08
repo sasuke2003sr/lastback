@@ -13,22 +13,21 @@
 <div class="f">
     <h3>Welcome Back !!!</h3>
     <h5>We missed you a lot  !!!</h5>
-    <form action="{% url 'login' %}" method="post">
+    <form action="index.html" method="post">
         {% csrf_token %}
         <input type="username" name="Name"  class="box" placeholder="Enter yours name">
     <!-- <label for="Username">Username:</label>
     <input type="Enter Username">
     <br> -->
     
-    <input type=" password" name="Password" class="box" placeholder="Enter your password">
-
-    <input type="number" name="TenderId" class="box" placeholder="Tender ID">
-            <input type="text" name="Title" class="box" placeholder="Title">
-            <h6>Publish date</h6>
-            <input type="date" name="Date" class="box" placeholder="Published ">
-            <h6>Deadline Date</h6>
-            <input type="date" name="Deadline" class="box" placeholder="Deadline">
-    <input type="Submit" value="Login In" id="submit">
+        <input type="password" name="Password" class="box" placeholder="Enter your password">
+        <input type="number" name="TenderId" class="box" placeholder="Tender ID">
+        <input type="text" name="Title" class="box" placeholder="Title">
+        <h6>Publish date</h6>
+        <input type="date" name="Date" class="box" placeholder="Published ">
+        <h6>Deadline Date</h6>
+        <input type="date" name="Deadline" class="box" placeholder="Deadline">
+        <input type="submit" value="Login In" id="submit">
     
     </form>
     {% comment %} <a href="" id="for">Forget Password ???</a> {% endcomment %}

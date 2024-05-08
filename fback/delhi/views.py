@@ -10,8 +10,7 @@ from .models import Tender
 from .models import *
 
 def delhi(request):
-  template = loader.get_template('index.html')
-  return HttpResponse(template.render())
+  return render(request,"index.html")
 
 from django.shortcuts import render
 
@@ -35,7 +34,6 @@ def tender_list(request):
     return render(request, 'tender_list.html', {'tenders': tenders})
 def login_view(request):
     # Add your view logic for login page here
-    return render(request, 'login.html')
     if request.method == "POST":
         data=request.POST
         Name=data.get("Name")
@@ -53,6 +51,7 @@ def login_view(request):
             Date=Date,
             Deadline=Deadline,
         )
+    return render(request, 'login.html')
 # def index(request):
 #     # Add any context data needed for index.html
 #     context = {
